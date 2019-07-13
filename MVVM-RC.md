@@ -58,7 +58,7 @@ extension UIViewController {
 ```swift
 class HomeVM {
 	...
-	func addSubscriptions (
+	func addSubscriptions () {
 		didTapSettings.subscribe {
 			router.route(SettingsRoute.self, navigationType: .push)
 		}
@@ -72,7 +72,7 @@ class HomeVM {
 				router.route(HomeRoute.self, navigationType: .crossFade)
 			}
 		}
-	) 
+	} 
 	...
 }
 
