@@ -5,7 +5,7 @@
 An opinionated iOS ~~architectural~~ app building pattern which embraces rapid app development. The pain point that it tries to address is the code complexity and clutter of adding/removing screens(VCs) to/from application flow.
 
 ## Inspired by
-This is inspired by ASP.NET MVC and similar web app frameworks for screen building and navigation and canonical MVVM for the "front-end". 
+This is inspired by ASP.NET MVC and similar web app frameworks for screen(route) building(instantiation) and navigation and canonical MVVM for the "front-end". 
 
 ## Prerequisites
 
