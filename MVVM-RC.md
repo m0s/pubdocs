@@ -34,7 +34,7 @@ Although the architecture can be implemented w/o these, in the spirit of rapid d
 
 ### Discussion and FAQ
 
-* Assembly introspection and convention based Route locator can eliminate the need of registering Routes with the Router
+* Assembly introspection and convention based Route locator can eliminate the need of registering Routes with the Router. [TODO: add reference code]
 * What if my Route supports only some types of transitions? - up to you how to handle violations, most likely you'd want to handle these in your implementation of the Router. Since this can only be determined at runtime, recommendation is to assert failure and to reveal the defects through UI tests or integration tests.
 * What if my Route's dependencies have a potential of not being satisfied in some theoretical routes or What if someone tries to route to my route without setting up my route's dependencies correctly - up to you how to handle. The recommendation is to handle these violations in VMs. Violations of injected objects/values is likely to cause either compile time issues or runtime crashes will can be caught through UI and integration tests. For optional property dependencies and flow specific data dependencies it is TBD on what's the best approach to handle. So far it seems like handling gracefully through some sort of UI message is most practical and development screw ups are to be handled through UI and integration tests.
 * Convention based storyboard loading helps to cut down on boilerplate VC instantiation: 
